@@ -17,3 +17,7 @@ app.get("/", (req, res) => {
   res.sendFile(file);
 });
 */
+
+app.listen(PORT, () => {
+  console.log(`server is listening on port ${PORT}`);
+});
