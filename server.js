@@ -18,6 +18,18 @@ app.get("/", (req, res) => {
 });
 */
 
+app.get("/exercise", (req, res) => {
+  const file = path.join(__dirname, "public", "exercise.html");
+
+  res.sendFile(file);
+});
+
+app.get("/stats", (req, res) => {
+  const file = path.join(__dirname, "public", "stats.html");
+
+  res.sendFile(file);
+});
+
 app.listen(PORT, () => {
   console.log(`server is listening on port ${PORT}`);
 });
